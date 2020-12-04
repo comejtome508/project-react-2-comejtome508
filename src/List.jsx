@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function List ({ choices }) {
+export default function List ({ selectedLists }) {
   return (
     <li>
-      {choices.map((choice) => (
-        <p key={choice.id}>
-          {choice.content}
+      {selectedLists.map((item) => (
+        <p key={item.id}>
+          {item.content}
         </p>
       ))}
     </li>

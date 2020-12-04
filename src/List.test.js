@@ -5,15 +5,20 @@ import { render } from '@testing-library/react';
 import List from './List';
 
 test('List', () => {
-  const choices = [
-  {
-    id: 1,
-    title: 'Saved Question 1',
-  },
-];
+  const selectedLists = [
+    {
+      id: 1,
+      content: 'Saved Question 1',
+    },
+    {
+      id: 2,
+      content: 'Saved Question 2',
+    },
+  ];
+
 
   const { container } = render((
-    <List />
+    <List selectedLists={selectedLists} />
   ));
 
   expect(container).toHaveTextContent('Saved Question 1');
