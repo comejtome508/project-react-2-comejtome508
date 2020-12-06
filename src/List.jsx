@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function List ({ selectedLists }) {
   return (
-    <li>
+    <ol>
       {selectedLists.map((item) => (
-        <p key={item.id}>
+        <li key={item.id}>
           {item.content}
-        </p>
+        </li>
       ))}
-    </li>
+    </ol>
   );
 } 
