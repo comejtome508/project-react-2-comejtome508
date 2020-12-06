@@ -8,4 +8,4 @@ export default function Question ({questions, onClickAddQuestion}) {
       <Choices questions={questions}onClickAddQuestion={onClickAddQuestion} />
     </div>
   );
-} 
+}
